@@ -4,7 +4,7 @@ use std::env::{self, Args};
 
 fn main() {
   let args: Vec<String> = env::args().collect();
-  args.len
+  if args.len() == 1 { panic!("need more arg fatty")}
   let start = SystemTime::now();
   
   let mut output = Command::new(&args[1]);
