@@ -1,10 +1,10 @@
 use std::time::SystemTime;
 use std::process::Command;
-use std::env::{self, Args};
+use std::env;
 
 fn main() {
   let args: Vec<String> = env::args().collect();
-  if args.len() == 1 { panic!("need more arg fatty")}
+  if args.len() == 1 { panic!("need more arg fatty")};
   let start = SystemTime::now();
   
   let mut output = Command::new(&args[1]);
@@ -15,5 +15,5 @@ fn main() {
   output.output().unwrap();
   
   let elapsed = start.elapsed().unwrap();
-  println!("{}", elapsed.as_secs_f64());
+  println!("program to koi {} secondes :d", elapsed.as_secs_f64());
 }
