@@ -1,1 +1,1 @@
-/home/runner/b/target/release/my-project: /home/runner/b/src/main.rs
+/home/runner/mytimer/target/release/my-project: /home/runner/mytimer/src/main.rs
